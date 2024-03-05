@@ -38,13 +38,13 @@ Node.js 20.10 or higher is required.
 The quickest way to get started with hotel backend is to clone the repository.
 
 ```console
-$ git clone https://github.com/CodeXtecch/hotelwebsite_backend
+$ git clone https://github.com/anonymous-sherlock/codextech-hotels.git
 ```
 
 Change the project directory
 
 ```console
-$ cd hotelwebsite_backend
+$ cd codextech-hotels
 ```
 
 Install dependencies:
@@ -62,14 +62,11 @@ $ pnpm run dev
 ## Build project
 
 ```console
-$ pnpm build
+$ pnpm deploy
 ```
 
-To start the build server:
+To deploy your app on cloudflare worker
 
-```console
-$ pnpm start
-```
 
 [appveyor-image]: https://badgen.net/appveyor/ci/dougwilson/hono/master?label=windows
 [appveyor-url]: https://ci.appveyor.com/project/dougwilson/hono
