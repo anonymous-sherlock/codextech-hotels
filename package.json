@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "dev": "wrangler dev src/app.ts",
+    "deploy": "wrangler deploy --minify src/app.ts",
+    "pull": "drizzle-kit introspect:pg ",
+    "studio": "pnpm drizzle-kit studio",
+    "generate": "drizzle-kit generate:pg",
+    "push": "drizzle-kit push:pg",
+    "migrate": "tsx src/db/migrate.ts",
+    "check": "drizzle-kit check:pg"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.9.0",
+    "@prisma/client": "^5.10.2",
+    "drizzle-orm": "^0.29.4",
+    "drizzle-zod": "^0.5.1",
+    "hono": "^4.0.9",
+    "nanoid": "^5.0.6",
+    "postgres": "^3.4.3",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240208.0",
+    "dotenv": "^16.4.5",
+    "drizzle-kit": "^0.20.14",
+    "prisma": "^5.10.2",
+    "tsx": "^4.7.1",
+    "wrangler": "^3.25.0"
+  }
+}

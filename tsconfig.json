@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "lib": ["ESNext"],
+    "baseUrl": ".",
+    "types": ["@cloudflare/workers-types"],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/hono": ["./src/hono.ts"]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx"
+  }
+}
